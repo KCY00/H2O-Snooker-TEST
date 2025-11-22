@@ -88,7 +88,7 @@
         <a href="index.html">首页</a>
         <a href="events.html">赛事</a>
         <a href="entertainment.html">娱乐玩法</a>
-        <a href="login.html#fees">收费 & 联系方式</a>
+        <a href="index.html#fees">收费 & 联系方式</a>
     </nav>
 </header>
 
@@ -114,18 +114,7 @@
 </footer>
 
 <script>
-    // 简单轮播效果
-    document.addEventListener('DOMContentLoaded', function() {
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel img');
-        if (slides.length > 0) {
-            setInterval(() => {
-                slides[currentSlide].classList.remove('active');
-                currentSlide = (currentSlide + 1) % slides.length;
-                slides[currentSlide].classList.add('active');
-            }, 3000);
-        }
-
+   
         // 汉堡菜单功能
         const hamburger = document.getElementById('hamburger-menu');
         const nav = document.getElementById('main-nav');
@@ -148,3 +137,4 @@
 </body>
 
 </html>
+
