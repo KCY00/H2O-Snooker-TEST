@@ -120,7 +120,7 @@
         <a href="index.html">首页</a>
         <a href="events.html">赛事</a>
         <a href="entertainment.html">娱乐玩法</a>
-        <a href="login.html#fees">收费 & 联系方式</a>
+        <a href="index.html#fees">收费 & 联系方式</a>
     </nav>
 </header>
 
@@ -199,5 +199,27 @@
     </div>
 </footer>
 
+    <script>
+    
+        // 汉堡菜单功能
+        const hamburger = document.getElementById('hamburger-menu');
+        const nav = document.getElementById('main-nav');
+        hamburger.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+        hamburger.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                nav.classList.toggle('active');
+            }
+        });
+        // 点击导航链接后自动收起菜单（移动端体验优化）
+        nav.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                nav.classList.remove('active');
+            });
+        });
+    });
+</script>
 </body>
+
 </html>
